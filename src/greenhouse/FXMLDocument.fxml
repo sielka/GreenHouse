@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="405.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="greenhouse.FXMLDocumentController">
+    <children>
+      <Separator layoutX="25.0" layoutY="211.0" prefHeight="5.0" prefWidth="323.0" style="-fx-background-color: BD0275;" />
+      <Separator layoutX="22.0" layoutY="76.0" orientation="VERTICAL" prefHeight="135.0" prefWidth="0.0" style="-fx-background-color: BD0275;" />
+      <Separator layoutX="345.0" layoutY="79.0" orientation="VERTICAL" prefHeight="135.0" prefWidth="0.0" style="-fx-background-color: BD0275;" />
+      <Separator layoutX="299.0" layoutY="78.0" prefHeight="5.0" prefWidth="49.0" style="-fx-background-color:BD0275;" />
+      <Separator fx:id="spv_open_left" layoutX="22.0" layoutY="16.0" orientation="VERTICAL" prefHeight="62.0" prefWidth="6.0" style="-fx-background-color: B358F9;" />
+      <Separator fx:id="spv_open_right" layoutX="296.0" layoutY="16.0" orientation="VERTICAL" prefHeight="62.0" prefWidth="0.0" style="-fx-background-color: B358F9;" />
+      <Separator layoutX="25.0" layoutY="15.0" prefHeight="5.0" prefWidth="276.0" style="-fx-background-color: BD0275;" />
+      <Label fx:id="label_shower" layoutX="25.0" layoutY="89.0" prefHeight="17.0" prefWidth="323.0" text="-------------------------------------------------------------------" />
+      <Button layoutX="70.0" layoutY="320.0" mnemonicParsing="false" onAction="#startTheSimulation" prefHeight="45.0" prefWidth="140.0" style="-fx-background-color: 006BFF;" text="Почати" textFill="Black" />
+      <TextField fx:id="current_temperature" layoutX="165.0" layoutY="233.0" prefHeight="25.0" prefWidth="61.0" />
+      <Label layoutX="14.0" layoutY="237.0" text="Поточна темпаратура (°C)" />
+      <Label layoutX="250.0" layoutY="237.0" text="Поточна вологість (%)" />
+      <TextField fx:id="current_wet" layoutX="380.0" layoutY="233.0" prefHeight="25.0" prefWidth="60.0" />
+      <Label layoutX="391.0" layoutY="27.0" prefHeight="150.0" prefWidth="158.0" style="-fx-background-color: #FA5882;" text="     Для теплиці &#10;     нормальні умови:&#10;     1) Темпаратура- 30 °C&#10;     2) Вологість - 80%" textFill="Black" />
+      <Button fx:id="b_windows" layoutX="5.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="276.0" />
+      <Button fx:id="b_shower" layoutX="285.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="276.0" />
+      <Button layoutX="300.0" layoutY="320.0" mnemonicParsing="false" onAction="#stopTheSimulation" prefHeight="45.0" prefWidth="140.0" style="-fx-background-color: 58F9F6;" text="Зупинити" textFill="Black" />
+    </children>
+</AnchorPane>
